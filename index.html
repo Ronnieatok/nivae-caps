@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Img/cap.png" type="image/x-icon">
+    <title>Nivae Caps Kenya | Premium Headwear Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        .gold-gradient {
+            background: linear-gradient(135deg, #ff0000 0%, #ff0000 100%);
+        }
+        .gold-text {
+            color: #ff0000;
+        }
+        .black-bg {
+            background-color: #0F0F0F;
+        }
+        .hover-gold:hover {
+            color: #ff0000;
+            transition: all 0.3s ease;
+        }
+        .cap-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+        .payment-option:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ff0000;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), 
+                        url('https://images.unsplash.com/photo-1521369854549-efd2abe8e271?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Top Announcement Bar -->
+    <div class="gold-gradient text-black text-center py-2 text-sm font-bold">
+        FREE DELIVERY IN NAIROBI FOR ORDERS ABOVE KES 500/= | NATIONWIDE DELIVERY AVAILABLE AT A FEE
+    </div>
+
+    <!-- Navigation -->
+    <nav class="black-bg border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-bold gold-text">Nivae Caps</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="nav-link hover-gold">Shop</a>
+                    <a href="#" class="nav-link hover-gold">Collections</a>
+                    <a href="#" class="nav-link hover-gold">About</a>
+                    <a href="#" class="nav-link hover-gold">Contact</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover-gold"><i class="fas fa-search"></i></a>
+                <a href="#" class="hover-gold"><i class="fas fa-user"></i></a>
+                <a href="#" class="hover-gold relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </a>
+                <button class="md:hidden hover-gold">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gold-text">ELEVATE YOUR STYLE</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Premium caps crafted for the discerning Kenyan gentleman</p>
+            <a href="#shop" class="gold-gradient text-black font-bold py-3 px-8 rounded-full hover:opacity-90 transition">SHOP NOW</a>
+        </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section class="py-12 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-10 gold-text">FEATURED BRANDS</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="Img/MLB _ New Era Cap.jpeg" alt="New Era" class="h-12 md:h-16 opacity-80 hover:opacity-100 transition">
+                <img src="Img/adidas.jpeg" alt="Adidas" class="h-12 md:h-16 opacity-80 hover:opacity-100 transition">
+                <img src="Img/Nike Men's.jpeg" alt="Nike" class="h-12 md:h-16 opacity-80 hover:opacity-100 transition">
+                <img src="Img/New York Yankees MLB Stretch Snap.jpeg" alt="MLB" class="h-12 md:h-16 opacity-80 hover:opacity-100 transition">
+                <img src="Img/GUCCI Baseball cap Cap Cotton Beige.jpeg" alt="Gucci" class="h-12 md:h-16 opacity-80 hover:opacity-100 transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Collection -->
+    <section id="shop" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-10">
+                <h2 class="text-2xl font-bold gold-text">OUR COLLECTION</h2>
+                <div class="flex space-x-2">
+                    <button class="border border-gray-700 px-4 py-2 rounded hover:bg-gray-800 transition">All</button>
+                    <button class="border border-gray-700 px-4 py-2 rounded hover:bg-gray-800 transition">New Arrivals</button>
+                    <button class="border border-gray-700 px-4 py-2 rounded hover:bg-gray-800 transition">Best Sellers</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="cap-card bg-gray-900 rounded-lg overflow-hidden transition">
+                    <div class="relative">
+                        <img src="Img/snap2.jpeg" alt="Premium Cap" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-black bg-opacity-70 text-xs text-white px-2 py-1 rounded">NEW</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Golden Emblem Snapback</h3>
+                        <p class="text-gray-400 text-sm mb-3">Limited Edition</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold gold-text">KES 500/=</span>
+                            <button class="bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-full transition">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="cap-card bg-gray-900 rounded-lg overflow-hidden transition">
+                    <div class="relative">
+                        <img src="Img/snap.jpeg" alt="Premium Cap" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Black Luxe Fitted</h3>
+                        <p class="text-gray-400 text-sm mb-3">Premium Cotton</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold gold-text">KES 450/=</span>
+                            <button class="bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-full transition">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="cap-card bg-gray-900 rounded-lg overflow-hidden transition">
+                    <div class="relative">
+                        <img src="Img/snap3.jpeg" alt="Premium Cap" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-black bg-opacity-70 text-xs text-white px-2 py-1 rounded">BESTSELLER</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Heritage Trucker</h3>
+                        <p class="text-gray-400 text-sm mb-3">Mesh Back</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold gold-text">KES 500/=</span>
+                            <button class="bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-full transition">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="cap-card bg-gray-900 rounded-lg overflow-hidden transition">
+                    <div class="relative">
+                        <img src="Img/snap4.jpeg" alt="Premium Cap" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Executive Dad Hat</h3>
+                        <p class="text-gray-400 text-sm mb-3">Soft Structured</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold gold-text">KES 500/=</span>
+                            <button class="bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-full transition">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="border border-gold-500 gold-text font-bold py-2 px-6 rounded hover:bg-gray-900 transition">VIEW ALL PRODUCTS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="Img/snap5.jpeg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 gold-text">About Nivae Caps</h2>
+                    <p class="mb-4">Founded in Nairobi, Nivae Caps brings you the finest selection of premium headwear from around the world, curated specifically for the Kenyan market.</p>
+                    <p class="mb-4">We believe that a cap is more than just an accessory - it's a statement of personal style and confidence.</p>
+                    <p>Each piece in our collection is hand-selected for quality, craftsmanship, and timeless design, ensuring you stand out in any crowd.</p>
+                    <div class="mt-8">
+                        <a href="#" class="gold-gradient text-black font-bold py-2 px-6 rounded-full hover:opacity-90 transition">OUR STORY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-12 gold-text">WHAT OUR CUSTOMERS SAY</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                       <div class="text-[#ff0000] mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"The quality of these caps is unmatched in Kenya. My Golden Emblem Snapback gets compliments everywhere I go!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 mr-3"></div>
+                        <div>
+                            <p class="font-bold">Benjamin Mutinda.</p>
+                            <p class="text-sm text-gray-400">Nairobi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-[#ff0000] mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Fast delivery to Mombasa and the cap was even better than pictured. Will definitely be ordering again."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 mr-3"></div>
+                        <div>
+                            <p class="font-bold">Everlyne Bokhe.</p>
+                            <p class="text-sm text-gray-400">Mombasa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <div class="text-[#ff0000] mr-2">
+                    
+                             <div class="text-[#ff0000] mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"The M-Pesa payment option makes shopping so convenient. Love my new Heritage Trucker - perfect fit!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 mr-3"></div>
+                        <div>
+                            <p class="font-bold">Jordan Ochieng.</p>
+                            <p class="text-sm text-gray-400">Kisumu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Options -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-12 gold-text">PAYMENT METHODS</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                <!-- M-Pesa -->
+                <div class="payment-option bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center text-center transition">
+                    <div class="bg-green-500 text-white rounded-full p-3 mb-3">
+                        <i class="fas fa-mobile-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">M-Pesa</h3>
+                    <p class="text-sm text-gray-400">Pay via M-Pesa Express</p>
+                </div>
+
+                <!-- Visa -->
+                <div class="payment-option bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center text-center transition">
+                    <div class="bg-blue-500 text-white rounded-full p-3 mb-3">
+                        <i class="fab fa-cc-visa text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">Visa</h3>
+                    <p class="text-sm text-gray-400">Credit/Debit Cards</p>
+                </div>
+
+                <!-- Mastercard -->
+                <div class="payment-option bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center text-center transition">
+                    <div class="bg-red-500 text-white rounded-full p-3 mb-3">
+                        <i class="fab fa-cc-mastercard text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">Mastercard</h3>
+                    <p class="text-sm text-gray-400">Credit/Debit Cards</p>
+                </div>
+
+                <!-- Airtel Money -->
+                <div class="payment-option bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center text-center transition">
+                    <div class="bg-red-400 text-white rounded-full p-3 mb-3">
+                        <i class="fas fa-money-bill-wave text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">Airtel Money</h3>
+                    <p class="text-sm text-gray-400">Mobile Payments</p>
+                </div>
+
+                <!-- Bank Transfer -->
+                <div class="payment-option bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center text-center transition">
+                    <div class="bg-indigo-500 text-white rounded-full p-3 mb-3">
+                        <i class="fas fa-university text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">Bank Transfer</h3>
+                    <p class="text-sm text-gray-400">Direct to Account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 gold-gradient">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4 text-black">JOIN OUR NIVAE CLUB</h2>
+            <p class="mb-6 text-black max-w-2xl mx-auto">Subscribe to our newsletter and get 10% off your first order plus exclusive access to new releases and special offers.</p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l focus:outline-none text-black">
+                <button type="submit" class="bg-black text-white px-6 py-3 rounded-r hover:bg-gray-900 transition">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="black-bg pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 gold-text">NIVAE CAPS</h3>
+                    <p class="mb-4">Premium headwear for the modern Kenyan. Quality, style, and exclusivity in every stitch.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/ronnieatok" class="hover-gold"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/ronnyatok" class="hover-gold"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ronnieatok" class="hover-gold"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/ronnieatok" class="hover-gold"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 gold-text">QUICK LINKS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover-gold transition">Home</a></li>
+                        <li><a href="#" class="hover-gold transition">Shop</a></li>
+                        <li><a href="#" class="hover-gold transition">Collections</a></li>
+                        <li><a href="#" class="hover-gold transition">About Us</a></li>
+                        <li><a href="#" class="hover-gold transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 gold-text">CUSTOMER SERVICE</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover-gold transition">FAQs</a></li>
+                        <li><a href="#" class="hover-gold transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover-gold transition">Size Guide</a></li>
+                        <li><a href="#" class="hover-gold transition">Payment Options</a></li>
+                        <li><a href="#" class="hover-gold transition">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 gold-text">CONTACT US</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 gold-text"></i>
+                            <span>Nivae Caps House, Umoja Area, Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 gold-text"></i>
+                            <span>+254 705 902 590</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 gold-text"></i>
+                            <span>info@nivaecaps.co.ke</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Nivae Caps Kenya. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition text-sm">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
+        <div class="absolute right-0 top-0 h-full w-full md:w-1/3 bg-gray-900 overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold gold-text">YOUR CART</h2>
+                    <button id="closeCart" class="text-2xl hover-gold">&times;</button>
+                </div>
+
+                <div class="space-y-4 mb-6">
+                    <!-- Cart items will be added here dynamically -->
+                    <div class="flex items-center border-b border-gray-800 pb-4">
+                        <img src="https://images.unsplash.com/photo-1575429198097-0413c5e7a63e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Golden Emblem Snapback" class="w-20 h-20 object-cover rounded">
+                        <div class="ml-4 flex-grow">
+                            <h3 class="font-bold">Golden Emblem Snapback</h3>
+                            <p class="text-sm text-gray-400">KES 4,500</p>
+                            <div class="flex items-center mt-2">
+                                <button class="bg-gray-800 px-2 py-1 rounded">-</button>
+                                <span class="mx-2">1</span>
+                                <button class="bg-gray-800 px-2 py-1 rounded">+</button>
+                            </div>
+                        </div>
+                        <button class="text-gray-500 hover:text-white">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 pt-4 mb-6">
+                    <div class="flex justify-between mb-2">
+                        <span>Subtotal</span>
+                        <span class="font-bold">KES 500/=</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span>Delivery</span>
+                        <span class="font-bold">KES 300/=</span>
+                    </div>
+                    <div class="flex justify-between text-lg font-bold mt-4">
+                        <span>Total</span>
+                        <span class="gold-text">KES 500/=</span>
+                    </div>
+                </div>
+
+                <button class="w-full gold-gradient text-black font-bold py-3 rounded mb-4 hover:opacity-90 transition">
+                    PROCEED TO CHECKOUT
+                </button>
+
+                <div class="text-center">
+                    <p class="text-sm text-gray-400">OR</p>
+                    <button class="text-sm gold-text underline mt-2">CONTINUE SHOPPING</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- M-Pesa Payment Modal -->
+    <div id="mpesaModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center">
+        <div class="bg-gray-900 rounded-lg w-full max-w-md mx-4">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold gold-text">PAY WITH M-PESA</h2>
+                    <button id="closeMpesa" class="text-2xl hover-gold">&times;</button>
+                </div>
+
+                <div class="mb-6">
+                    <p class="mb-4">Complete your purchase by sending KES <span class="font-bold">4,800</span> via M-Pesa to:</p>
+                    <div class="bg-gray-800 p-4 rounded mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span>Business Number:</span>
+                            <span class="font-bold">247247</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Account Number: 0705902590</span>
+                            <span class="font-bold">Nivaecaps</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">You will receive a confirmation SMS once payment is received.</p>
+                </div>
+
+                <div class="flex space-x-4">
+                    <button class="flex-1 border border-gray-700 py-2 rounded hover:bg-gray-800 transition">
+                        I'VE PAID
+                    </button>
+                    <button class="flex-1 gold-gradient text-black font-bold py-2 rounded hover:opacity-90 transition">
+                        PAY NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Shopping Cart Toggle
+        const cartButtons = document.querySelectorAll('[aria-label="shopping cart"], #closeCart');
+        const cartModal = document.getElementById('cartModal');
+        
+        cartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                cartModal.classList.toggle('hidden');
+            });
+        });
+
+        // M-Pesa Payment Modal
+        const mpesaModal = document.getElementById('mpesaModal');
+        const closeMpesa = document.getElementById('closeMpesa');
+        
+        // This would be triggered when user selects M-Pesa payment option
+        function showMpesaModal() {
+            mpesaModal.classList.remove('hidden');
+            cartModal.classList.add('hidden');
+        }
+        
+        closeMpesa.addEventListener('click', () => {
+            mpesaModal.classList.add('hidden');
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('button[aria-label="mobile menu"]');
+        const mobileMenu = document.querySelector('[aria-label="mobile menu items"]');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Product Quick View (would be implemented with actual product data)
+        document.querySelectorAll('.cap-card').forEach(card => {
+            card.addEventListener('click', () => {
+                // In a real implementation, this would show a modal with product details
+                console.log('View product details');
+            });
+        });
+
+        // Newsletter Form Submission
+        const newsletterForm = document.querySelector('form[aria-label="newsletter"]');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('input[type="email"]').value;
+            // In a real implementation, this would send the email to your backend
+            alert(`Thank you for subscribing with ${email}! Check your email for your 10% discount code.`);
+            e.target.reset();
+        });
+    </script>
+
+</html>
